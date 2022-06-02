@@ -38,7 +38,8 @@ public with sharing class ContactControllerAuraTest {
         System.assertNotEquals(newContacts.size(), returnedContacts, 'Contacts are loaded');
     }
 
-    @isTest static void getContacts_findByName() {
+    @isTest
+    static void getContacts_findByName() {
         List<Contact> testContacts = new List<Contact>();
 
         test.startTest();
@@ -48,7 +49,8 @@ public with sharing class ContactControllerAuraTest {
         System.assertEquals(2, testContacts.size(), 'receipted incorrect count of contacts');
     }
 
-    @isTest static void getContacts_findByName_emptySearch() {
+    @isTest
+    static void getContacts_findByName_emptySearch() {
         List<Contact> testContacts = new List<Contact>();
 
         test.startTest();
