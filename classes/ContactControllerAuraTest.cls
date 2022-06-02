@@ -1,7 +1,8 @@
 @IsTest
 public with sharing class ContactControllerAuraTest {
 
-    @testSetup static void setup() {
+    @testSetup
+    static void setup() {
         List<Contact> testContacts = new List<Contact>();
         for(Integer i = 0; i < 2; i++) {
             Contact contacts = new Contact(
