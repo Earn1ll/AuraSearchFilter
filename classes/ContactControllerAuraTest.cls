@@ -30,8 +30,8 @@ public with sharing class ContactControllerAuraTest {
         List<Contact> newContacts = [
             SELECT Id, LastName, FirstName, CreatedDate FROM Contact
             WHERE FirstName = 'FirstNameContact'
-        ]
-        ;
+        ];
+        
         Test.startTest();
         Integer returnedContacts = ContactControllerAura.fetchContacts().size();
         Test.stopTest();
